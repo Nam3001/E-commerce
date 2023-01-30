@@ -1,0 +1,20 @@
+export const routes = {
+    home: '/',
+    phone: '/dien-thoai',
+    laptop: '/may-tinh-xach-tay',
+    tablet: '/may-tinh-bang',
+    apple: '/apple',
+    PC: '/may-tinh-de-ban',
+    accessory: '/phu-kien',
+    SIMCard: '/sim-the',
+    promotion: '/khuyen-mai',
+    news: '/thong-tin',
+    service: '/dich-vu',
+    cart: '/cart',
+    screen: '/man-hinh',
+    component: '/linh-kien',
+    notFound: '*',
+    productDetail: '/:category/:productId',
+    oldProduct: '/may-doi-tra',
+    household: '/hang-gia-dung'
+}

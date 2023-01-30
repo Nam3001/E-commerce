@@ -6,14 +6,17 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 import App from './App'
 import customTheme from './utils'
+import GlobalStyle from './components/GlobalStyle'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
         <BrowserRouter>
-            <ChakraProvider theme={customTheme}>
-                <App />
-            </ChakraProvider>
+            <GlobalStyle>
+                <ChakraProvider theme={customTheme}>
+                    <App />
+                </ChakraProvider>
+            </GlobalStyle>
         </BrowserRouter>
     </React.StrictMode>
 )
