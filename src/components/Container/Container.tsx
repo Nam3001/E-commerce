@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container as ChakraContainer } from '@chakra-ui/react'
-import { BaseProps } from '@/interfaces'
 
 const Container: React.FC<BaseProps> = ({ children }) => {
     return (

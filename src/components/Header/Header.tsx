@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Box, Text, Container, Flex, Button, Input } from '@chakra-ui/react'
 import NavItem from '../NavItem'
+
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 interface NavProp {
@@ -83,19 +84,13 @@ const Header: React.FC = () => {
                         <Flex>
                             {navList.map((nav) => (
                                 <NavItem
+                                    key={nav.content}
                                     content={nav.content}
                                     icon={nav.icon}
                                 />
                             ))}
                         </Flex>
                     </Flex>
-                </Container>
-            </Box>
-            <Box className="menu" height="36px" bg="dark">
-                <Container maxW={{ sm: '100%', xl: '1200px' }} px="8px">
-                    <Box height="100%" maxW="100%">
-                        hello
-                    </Box>
                 </Container>
             </Box>
         </>

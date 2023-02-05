@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { BaseProps } from '@/interfaces'
 
 import './GlobalStyle.css'
 
